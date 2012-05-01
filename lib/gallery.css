@@ -1,0 +1,163 @@
+
+.gallery-overlay {
+  z-index: 10000;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  background: black;
+  opacity: .9;
+
+  display: none;
+}
+
+.gallery-outer {
+  z-index: 10001;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  width: 1px;
+  height: 1px;
+  display: none;
+}
+
+.gallery-inner {
+  z-index: 10002;
+  position: absolute;
+  color: #B3B3B3;
+  font-size: 13px;
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  background-color: black;
+}
+
+.gallery-screen {
+  position: relative;
+  height: 100%;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gallery-screen:hover {
+  cursor: pointer;
+}
+
+.gallery-left, .gallery-right {
+  z-index: 10004;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  background-image: url(arrows.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 45px;
+  width: 27px;
+  opacity: 0;
+  pointer-events: none;
+  
+  -webkit-transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  -ms-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.gallery-screen:hover .gallery-left, .gallery-screen:hover .gallery-right {
+  opacity: .4;
+}
+
+.gallery-screen:hover .gallery-active {
+  opacity: 1;
+}
+
+.gallery-left {
+  background-position: 0 -123px;
+  left: 20px;
+}
+
+.gallery-right {
+  background-position: -56px -123px;
+  right: 20px;
+}
+
+.gallery-image {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+}
+
+.gallery-bottombar {
+  height: 38px;
+  background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+
+  -webkit-transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  -ms-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.gallery-screen:hover .gallery-bottombar {
+  opacity: 1;
+}
+
+.gallery-bottombar:hover {
+  cursor: auto;
+}
+
+.gallery-bottombar span {
+  padding: 0 10px;
+  float: left;
+  line-height: 38px;
+}
+
+.gallery-bottombar a {
+  padding: 0 5px;
+  margin: 8px 10px 8px 0;
+  float: right;
+  font-weight: bold;
+  color: #B3B3B3;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.gallery-bottombar a:hover {
+  background-color: rgba(255, 255, 255, 0.199219);
+  border-radius: 2px;
+  color: white;
+}
+
+.gallery-fullscreen {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-image: url(fullscreen.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  width: 13px;
+  height: 13px;
+  opacity: 0.4;
+
+  -webkit-transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  -ms-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.gallery-fullscreen:hover {
+  opacity: 0.8;
+}
