@@ -149,7 +149,7 @@
   display: block;
   width: 13px;
   height: 13px;
-  opacity: 0.4;
+  opacity: 0;
 
   -webkit-transition: opacity .2s;
   -moz-transition: opacity .2s;
@@ -158,6 +158,10 @@
   transition: opacity .2s;
 }
 
-.gallery-fullscreen:hover {
+.gallery-screen:hover .gallery-fullscreen {
+  opacity: 0.4;
+}
+
+.gallery-screen:hover .gallery-fullscreen:hover {
   opacity: 0.8;
 }
