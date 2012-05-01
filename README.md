@@ -12,11 +12,11 @@ There are dozens of lightbox plugins out there but none of them do what I needed
 
 __________________ <a href="http://fooo.fr/~vjeux/github/Gallery/demo/gallery.html#image=mounts:2" target="_blank"><img src="http://fooo.fr/~vjeux/github/Gallery/demo/gallery.png" /></a>
 
-Some other goodies that were not part of the original needs
+Some other goodies that were not part of the original needs:
 
  - Smart resizing. The gallery will never shrink when you change image. It will give you a consistent click target to go to the next image.
  - Agressive preloading of the next images
- - Smart click targets. Only the left 20% of the gallery is going next. The 80% is dedicated to what you want to do most often, go to the next image.
+ - Smart click targets. Only the left 20% of the gallery is going previous. The right 80% is dedicated to what you want to do most often, go to the next image.
 
 How to use
 ===========
